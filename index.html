@@ -11,13 +11,48 @@
         Rock Paper Scissors Game
     </div>
     <div class="content">
-        <div class="play">
-            <button>play</button>
+        <p>Choose your sign:</p>
+        <div class="choices">
+            <button id="rock">
+                <img src="https://cdn.pixabay.com/photo/2012/04/16/11/07/rock-35522_1280.png" alt="">
+                <p>Rock</p>
+            </button>
+            <button id="paper">
+                <img src="https://cdn.pixabay.com/photo/2016/10/02/03/14/paper-1708865_1280.png" alt="">
+                <p>Paper</p>
+            </button>
+            <button id="scissors">
+                <img src="https://cdn.pixabay.com/photo/2012/04/26/18/43/scissors-42801_1280.png" alt="">
+                <p>Scissors</p>
+            </button>
+        </div>
+        <div class="subtitle">
+            <p>First to score 5 points wins the game</p>
+        </div>
+        <div class="compare">
+            <div class="player-hand">
+                <img id="player-hand" src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Black_question_mark.png" alt="">
+                <p>Player's hand</p>
+            </div>
+            <div class="computer-hand">
+                <img id="computer-hand" src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Black_question_mark.png" alt="">
+                <p>Computer's hand</p>
+            </div>
         </div>
         <div class="result">
             <div id="result">
-                <p>Click play when you're ready to give your hand!</p>
             </div>
+        </div>
+        <div class="score" id="score">
+            <div id="player-score">
+                Player's score: 0
+            </div>
+            <div id="computer-score">
+                Computer's score: 0
+            </div>
+        </div>
+        <div class="restart">
+            <button id="restart">Restart</button>
         </div>
     </div>
     <script src="js.js"></script>
