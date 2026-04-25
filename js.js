@@ -1,7 +1,7 @@
 const rockButton = document.querySelector("#rock");
 const paperButton = document.querySelector("#paper");
 const scissorsButton = document.querySelector("#scissors");
-const restart = document.getElementById("restart")
+const restart = document.getElementById("restart");
 let playerScore=0;
 let computerScore=0;
 
@@ -25,20 +25,18 @@ function getComputerChoice(playerSign) {
              (playerSign ==="scissors"&&computerSign==="paper")){
         result.innerHTML = `<p>You Win!</p>`;
         playerScore+=1; 
-        console.log(playerScore) 
-        document.querySelector("#player-score").innerHTML=`<p>Player's score: "${playerScore}"`      
+        document.querySelector("#player-score").innerHTML=`<p>Player's score: "${playerScore}"`;     
     }else{
         result.innerHTML = `<p>You Lose!</p>`;
         computerScore+=1;
-        document.querySelector("#computer-score").innerHTML=`<p>Computer's score: "${computerScore}"` 
-        console.log(computerScore)      
+        document.querySelector("#computer-score").innerHTML=`<p>Computer's score: "${computerScore}"`; 
     }
     if(playerScore>=5&&computerScore<5){
-        document.querySelector("#score").innerHTML=`<p> Yo're the Winner!</p> `
+        document.querySelector("#score").innerHTML=`<p> Yo're the Winner!</p> `;
         playerScore=0;
         restart.style.display="block";
     }else if(computerScore>=5&&playerScore<5){
-        document.querySelector("#score").innerHTML=`<p> You Lose!</p> `
+        document.querySelector("#score").innerHTML=`<p> You Lose!</p> `;
         computerScore=0;
         restart.style.display="block";
     }
